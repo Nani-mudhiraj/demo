@@ -1,22 +1,8 @@
-pipeline {
-    agent any
-
-    stages {
-        stage('Compile') {
-            steps {
-                script {
-                    // Compile the Java program
-                    bat 'javac add.java'
-                }
-            }
-        }
-        stage('Run') {
-            steps {
-                script {
-                    // Run the Java program
-                    bat 'java add'
-                }
-            }
-        }
+public class add {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 10;
+        int sum = a + b;
+        System.out.println("Sum: " + sum);
     }
 }
