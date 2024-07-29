@@ -5,7 +5,6 @@ pipeline {
         stage('Compile') {
             steps {
                 script {
-                    // Compile the Java program
                     bat 'javac add.java'
                 }
             }
@@ -13,7 +12,6 @@ pipeline {
         stage('Run') {
             steps {
                 script {
-                    // Run the Java program
                     bat 'java add'
                 }
             }
